@@ -34,7 +34,7 @@ class HeartLine extends StatelessWidget {
   // Define the method with a required named parameter
   Widget imagecontainer({required String imagePath}) {
     return ClipOval(
-      child: Container(
+      child: SizedBox(
         height: 50, // Fixed height (can be made responsive if needed)
         width: 50, // Fixed width (can be made responsive if needed)
         child: Image.asset(imagePath), // Use the passed image path

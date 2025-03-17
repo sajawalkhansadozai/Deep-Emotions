@@ -12,14 +12,14 @@ class RichTextWidget extends StatelessWidget {
   final double screenHeight;
 
   const RichTextWidget({
-    Key? key,
+    super.key,
     required this.context,
     required this.route2,
     required this.text1,
     required this.text2,
     required this.screenWidth,
     required this.screenHeight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -116,15 +116,15 @@ class HomeFirstLine extends StatelessWidget {
     return Container(
       height: containerHeight,
       width: containerWidth,
+      decoration: BoxDecoration(
+        color: containerColor,
+        borderRadius: BorderRadius.circular(borderRadius),
+      ),
       child: Center(
         child: Text(
           text,
           style: TextStyle(color: textColor), // Apply text color
         ),
-      ),
-      decoration: BoxDecoration(
-        color: containerColor,
-        borderRadius: BorderRadius.circular(borderRadius),
       ),
     );
   }

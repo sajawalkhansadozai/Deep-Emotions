@@ -9,12 +9,12 @@ class ReusableButton extends StatelessWidget {
   final double screenHeight;
 
   const ReusableButton({
-    Key? key,
+    super.key,
     required this.buttonText,
     required this.route,
     required this.screenWidth,
     required this.screenHeight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,12 +26,6 @@ class ReusableButton extends StatelessWidget {
           onPressed: () {
             GoRouter.of(context).go(route);
           },
-          child: Text(
-            buttonText,
-            style: TextStyle(
-              fontSize: screenWidth * 0.045, // 4.5% of screen width
-            ),
-          ),
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.GoldCream,
             foregroundColor: AppColors.CharcoalBlack,
@@ -39,6 +33,12 @@ class ReusableButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(
                 screenWidth * 0.03,
               ), // 3% of screen width
+            ),
+          ),
+          child: Text(
+            buttonText,
+            style: TextStyle(
+              fontSize: screenWidth * 0.045, // 4.5% of screen width
             ),
           ),
         ),

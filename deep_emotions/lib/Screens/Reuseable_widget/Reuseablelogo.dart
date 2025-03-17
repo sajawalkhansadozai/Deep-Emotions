@@ -26,7 +26,7 @@ class Reuseablelogo extends StatelessWidget {
   }
 
   Container Imagecontainer(String imageOfLogo, double size) {
-    return Container(
+    return SizedBox(
       height: size,
       width: size,
       child: Image.asset(

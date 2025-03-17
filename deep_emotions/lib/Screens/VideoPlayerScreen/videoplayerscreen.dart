@@ -30,7 +30,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           SizedBox(height: screenHeight * 0.04), // 4% of screen height
           Stack(
             children: [
-              Container(
+              SizedBox(
                 height: screenHeight * 0.85, // 80% of screen height
                 width: screenWidth, // Full screen width
                 child: Image.asset(
