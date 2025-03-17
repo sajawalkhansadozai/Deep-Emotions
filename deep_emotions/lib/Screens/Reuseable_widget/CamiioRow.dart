@@ -19,7 +19,7 @@ class Camiiorow extends StatelessWidget {
           children: [
             // Circular image container
             ClipOval(
-              child: SizedBox(
+              child: Container(
                 height: screenHeight * 0.03, // 3% of screen height
                 width: screenWidth * 0.06, // 6% of screen width
                 child: Image.asset(

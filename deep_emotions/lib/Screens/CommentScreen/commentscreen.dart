@@ -121,7 +121,7 @@ Widget WriteCommentContainer() {
           child: Row(
             children: [
               ClipOval(
-                child: SizedBox(
+                child: Container(
                   height: 25,
                   width: 25,
 
@@ -145,7 +145,7 @@ Widget CommentWidget() {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 30),
-            child: SizedBox(
+            child: Container(
               height: 30,
               width: 30,
 

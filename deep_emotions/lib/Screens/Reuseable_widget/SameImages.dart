@@ -33,7 +33,7 @@ class SameImage extends StatelessWidget {
           Positioned(
             left: screenWidth * 0.8, // 80% of screen width
             top: screenHeight * 0.03, // 3% of screen height
-            child: SizedBox(
+            child: Container(
               height: screenHeight * 0.03, // 3% of screen height
               width: screenWidth * 0.05, // 5% of screen width
               child: Image.asset(
@@ -60,7 +60,7 @@ Widget _buildImageContainer({
     padding: padding,
     child: ClipRRect(
       borderRadius: BorderRadius.circular(borderRadius), // Apply border radius
-      child: SizedBox(
+      child: Container(
         height: height,
         width: width,
         child: Image.asset(
